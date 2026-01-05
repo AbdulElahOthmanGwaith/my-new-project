@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://abdulelahothmangwaith.github.io/my-new-project/sitemap.xml
