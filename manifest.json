@@ -2,62 +2,20 @@
     "name": "مترجم عربي - أمهري",
     "short_name": "مترجم",
     "description": "مترجم مجاني وسريع من العربية إلى الأمهرية والعكس",
-    "start_url": "/",
+    "start_url": "/my-new-project/",
     "display": "standalone",
     "background_color": "#F9FAFB",
     "theme_color": "#1E40AF",
     "orientation": "portrait-primary",
-    "scope": "/",
+    "scope": "/my-new-project/",
     "lang": "ar",
     "dir": "rtl",
     "categories": ["utilities", "education"],
     "icons": [
         {
-            "src": "icon-72.png",
-            "sizes": "72x72",
-            "type": "image/png",
-            "purpose": "any maskable"
-        },
-        {
-            "src": "icon-96.png",
-            "sizes": "96x96",
-            "type": "image/png",
-            "purpose": "any maskable"
-        },
-        {
-            "src": "icon-128.png",
-            "sizes": "128x128",
-            "type": "image/png",
-            "purpose": "any maskable"
-        },
-        {
-            "src": "icon-144.png",
-            "sizes": "144x144",
-            "type": "image/png",
-            "purpose": "any maskable"
-        },
-        {
-            "src": "icon-152.png",
-            "sizes": "152x152",
-            "type": "image/png",
-            "purpose": "any maskable"
-        },
-        {
-            "src": "icon-192.png",
-            "sizes": "192x192",
-            "type": "image/png",
-            "purpose": "any maskable"
-        },
-        {
-            "src": "icon-384.png",
-            "sizes": "384x384",
-            "type": "image/png",
-            "purpose": "any maskable"
-        },
-        {
-            "src": "icon-512.png",
-            "sizes": "512x512",
-            "type": "image/png",
+            "src": "icon.svg",
+            "sizes": "any",
+            "type": "image/svg+xml",
             "purpose": "any maskable"
         }
     ],
@@ -66,8 +24,8 @@
             "name": "ترجمة جديدة",
             "short_name": "جديد",
             "description": "بدء ترجمة جديدة",
-            "url": "/",
-            "icons": [{ "src": "icon-192.png", "sizes": "192x192" }]
+            "url": "/my-new-project/",
+            "icons": [{ "src": "icon.svg", "sizes": "any" }]
         }
     ],
     "screenshots": [],

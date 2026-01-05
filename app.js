@@ -855,7 +855,7 @@ const App = {
 
     setupServiceWorker() {
         if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('sw.js')
+            navigator.serviceWorker.register('/my-new-project/sw.js')
                 .then(registration => {
                     console.log('ServiceWorker registered:', registration.scope);
                 })

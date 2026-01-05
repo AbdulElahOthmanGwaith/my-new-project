@@ -3,17 +3,18 @@
  * خدمة مترجم عربي - أمهري
  */
 
-const CACHE_NAME = 'translator-v1';
+const CACHE_NAME = 'translator-v2';
 const STATIC_ASSETS = [
-    '/',
-    '/index.html',
-    '/styles.css',
-    '/app.js',
-    '/manifest.json',
+    '/my-new-project/',
+    '/my-new-project/index.html',
+    '/my-new-project/styles.css',
+    '/my-new-project/app.js',
+    '/my-new-project/manifest.json',
+    '/my-new-project/icon.svg',
     'https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@300;400;500;600;700&family=Noto+Sans+Ethiopic:wght@400;500;600;700&display=swap'
 ];
 
-const API_CACHE_NAME = 'translator-api-v1';
+const API_CACHE_NAME = 'translator-api-v2';
 const API_CACHE_DURATION = 60 * 60 * 24; // 24 hours
 
 // تثبيت Service Worker
@@ -150,7 +151,7 @@ async function handleStaticRequest(request) {
 
         // إرجاع صفحة الخطأ إذا كانت HTML
         if (request.headers.get('Accept').includes('text/html')) {
-            const cache = await caches.match('/index.html');
+            const cache = await caches.match('/my-new-project/index.html');
             if (cache) {
                 return cache;
             }
@@ -170,8 +171,8 @@ self.addEventListener('push', (event) => {
 
     const options = {
         body: data.body || 'لديك إشعار جديد',
-        icon: '/icon-192.png',
-        badge: '/icon-72.png',
+        icon: '/my-new-project/icon.svg',
+        badge: '/my-new-project/icon.svg',
         vibrate: [100, 50, 100],
         data: {
             url: data.url || '/'
